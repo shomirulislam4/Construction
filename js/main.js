@@ -27,6 +27,11 @@ $('.portfolio-menu').on( 'click', 'li', function() {
   portfolio.isotope({ filter: filterValue });
 });
 
+var portfolio = $('.masonry').isotope({
+  itemSelector: '.masonry-item',
+  percentPosition: true,
+})
+
 $('.portfolio-img-popup').magnificPopup({
   type: 'image',
   gallery: {
@@ -145,12 +150,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-//--------------------------------Portfolio masonry grid (Isotope)--------------------------------
-var portfolio = $('.masonry').isotope({
-  itemSelector: '.masonry-item',
-  percentPosition: false,
-  masonry: {
-    columnWidth: '.masonry-item'
-}
-})
