@@ -149,8 +149,8 @@ function topFunction() {
 //--------------------------------Portfolio masonry grid (Isotope)--------------------------------
 var portfolio = $('.masonry').isotope({
   itemSelector: '.masonry-item',
-  percentPosition: true,
+  percentPosition: false,
   masonry: {
-  columnWidth: '.masonry-item'
+    columnWidth: '.masonry-item'
 }
 })
