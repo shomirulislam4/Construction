@@ -19,6 +19,9 @@
 10. Testimonial
 11. Accordion
 12. Footer
+13. Title & Breadcrumb Pages
+14. Career
+15. Contact us
 */
 
 /* ------------------------------------------
@@ -1988,4 +1991,105 @@ button.blog-read:hover {
     margin-bottom: 20px;
     font-size: 17px;
     color: #777777;
+}
+
+/* ------------------------------------------
+    ------------------------------------------
+15. Contact us
+------------------------------------------
+------------------------------------------ */
+.contact-us {
+    margin: 100px 0;
+}
+
+.contact-form {
+    background: #f7f7fd;
+    padding: 60px 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form h4 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.contact-form form {
+    font-size: 15px;
+}
+
+.contact-form input {
+    border: 0;
+    border-bottom: 1px solid #ccccce;
+    background: transparent;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    border: 0;
+    border-bottom: 1px solid #ccccce;
+    background: transparent;
+    height: 75px;
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder  {
+    color: #ccccce;
+}
+
+.contact-form button {
+    padding: 15px 12px;
+    background: #fbba42;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #333333;
+    color: #fff;
+}
+
+.contact-details {
+    padding: 60px 40px;
+    border: 1px solid #f2f2f2;
+}
+
+.contact-details span {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #777777;
+    margin: 0;
+}
+
+.contact-details h2 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+.contact-details h4 {
+    color: #333333;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact-meta p {
+    margin-bottom: 2px;
+}
+
+.contact-meta {
+    margin-bottom: 40px;
 }
