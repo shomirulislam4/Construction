@@ -27,10 +27,19 @@ $('.portfolio-menu').on( 'click', 'li', function() {
   portfolio.isotope({ filter: filterValue });
 });
 
-var portfolio = $('.masonry').isotope({
+$('.masonry').isotope({
   itemSelector: '.masonry-item',
   percentPosition: true,
+  masonry: {
+    columnWidth: '.masonry-item'
+  }
 })
+
+var $grid = $('.masonry').imagesLoaded( function() {
+
+  $grid.isotope({
+  });
+});
 
 $('.portfolio-img-popup').magnificPopup({
   type: 'image',

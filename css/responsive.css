@@ -577,23 +577,19 @@
         width: 50%;
     }
 
-    .header-v3 .hbr-left {
-        display: flex;
-        align-items: center;
-        width: 25%;
+    .header-v3 .info-bar {
+        display: none;
     }
 
     .header-v3 .hbr-center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
+        width: 20%;
+        text-align: left;
+        display: block;
+        float: left;
     }
 
     .header-v3 .hbr-right {
-        display: flex;
-        align-items: center;
-        width: 25%;
+        width: 80%;
     }
 
     .hero-sec-v3 .hero-content h2 {
