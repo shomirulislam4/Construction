@@ -31,7 +31,7 @@ $('.masonry').isotope({
   itemSelector: '.masonry-item',
   percentPosition: true,
   masonry: {
-    columnWidth: '.masonry-item'
+    columnWidth: '.masonry-item',
   }
 })
 

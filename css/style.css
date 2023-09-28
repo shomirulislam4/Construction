@@ -961,6 +961,7 @@ header.header-transparent a:hover {
 }
 
 .masonry {
+    height: 930px;
     margin-bottom: 50px;
 }
 
@@ -1043,7 +1044,10 @@ header.header-transparent a:hover {
 }
 
 /*Portfolio Variant 2 (home 2-3)*/
-.portfolio-variant-2 {height: 100%;}
+.portfolio-variant-2 .masonry {
+    height: 800px;
+    margin-bottom: 50px;
+}
 
 .portfolio-variant-2 .portfolio-wrapper {
     margin-bottom: 0;
