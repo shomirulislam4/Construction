@@ -961,14 +961,12 @@ header.header-transparent a:hover {
 }
 
 .masonry {
-    height: 930px;
     margin-bottom: 50px;
 }
 
 .portfolio-wrapper {
     position: relative;
     margin-bottom: 30px;
-    display: block;
 }
 
 .portfolio-img {
@@ -1044,16 +1042,12 @@ header.header-transparent a:hover {
 }
 
 /*Portfolio Variant 2 (home 2-3)*/
-.portfolio-variant-2 .masonry {
-    height: 800px;
-    margin-bottom: 50px;
-}
-
 .portfolio-variant-2 .portfolio-wrapper {
     margin-bottom: 0;
 }
 
-.portfolio-variant-2 .portfolio-menu li:hover, .portfolio-variant-2 .portfolio-menu > li.active {
+.portfolio-variant-2 .portfolio-menu li:hover,
+.portfolio-variant-2 .portfolio-menu > li.active {
     background: transparent;
     border: 1px solid #fbba42;
 }

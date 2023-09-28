@@ -27,14 +27,6 @@ $('.portfolio-menu').on( 'click', 'li', function() {
   portfolio.isotope({ filter: filterValue });
 });
 
-$('.masonry').isotope({
-  itemSelector: '.masonry-item',
-  percentPosition: true,
-  masonry: {
-    columnWidth: '.masonry-item',
-  }
-})
-
 $('.portfolio-img-popup').magnificPopup({
   type: 'image',
   gallery: {
@@ -143,9 +135,6 @@ $('.testimonial-slider-v3').slick({
   dots: false,
 });
 
-//--------------------------------Nice Select--------------------------------
-$('select').niceSelect();
-
 //-----------------------------------------
 }) (jQuery);
 
@@ -157,7 +146,11 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-var $grid = $('.masonry').imagesLoaded( function() {
-  $grid.isotope({
-  });
-});
+//--------------------------------Portfolio masonry grid (Isotope)--------------------------------
+var portfolio = $('.masonry').isotope({
+  itemSelector: '.masonry-item',
+  percentPosition: true,
+  masonry: {
+  columnWidth: '.masonry-item'
+}
+})
