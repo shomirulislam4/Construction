@@ -35,12 +35,6 @@ $('.masonry').isotope({
   }
 })
 
-var $grid = $('.masonry').imagesLoaded( function() {
-
-  $grid.isotope({
-  });
-});
-
 $('.portfolio-img-popup').magnificPopup({
   type: 'image',
   gallery: {
@@ -162,3 +156,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+var $grid = $('.masonry').imagesLoaded( function() {
+  $grid.isotope({
+  });
+});
