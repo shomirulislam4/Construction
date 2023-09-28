@@ -22,6 +22,7 @@
 13. Title & Breadcrumb Pages
 14. Career
 15. Contact us
+16. Shop
 */
 
 /* ------------------------------------------
@@ -1547,7 +1548,7 @@ button.blog-read:hover {
     border-radius: 2px;
 }
 
-.news-nav .page-item:hover {
+.news-nav .page-item:hover, .news-nav .page-item.active {
     background: #fbba42;
 }
 
@@ -2092,4 +2093,76 @@ button.blog-read:hover {
 
 .contact-meta {
     margin-bottom: 40px;
+}
+
+/* ------------------------------------------
+    ------------------------------------------
+16. Shop
+------------------------------------------
+------------------------------------------ */
+.shop {
+    padding: 100px 0;
+}
+
+.product-sort {
+    margin-bottom: 40px;
+}
+
+.product-sort p {
+    line-height: 42px;
+}
+
+.product {
+    margin-bottom: 50px;
+}
+
+.product-img {
+    position: relative;
+    border: 1px solid #ebebeb;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.product-img .add-to-cart-ico {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    background: #fbba42;
+    top: 10px;
+    left: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.product h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product span {
+    font-size: 16px;
+}
+
+.product-img:hover {
+    border-color: #fbba42;
+}
+
+.product-img:hover .add-to-cart-ico  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.product-filter .nice-select {
+    border-radius: 0;
+    border: solid 1px #ebebeb;
+    float: right;
+    width: 215px;
 }
