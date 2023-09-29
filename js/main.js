@@ -17,23 +17,6 @@ $('#mobile-menu').meanmenu({
   meanDisplay: 'block',
 });
 
-//--------------------------------Portfolio--------------------------------
-$('.portfolio-menu').on('click','li',function(){
-  $(this).addClass('active').siblings().removeClass('active');
-});
-
-$('.portfolio-menu').on( 'click', 'li', function() {
-  var filterValue = $(this).attr('data-filter');
-  portfolio.isotope({ filter: filterValue });
-});
-
-$('.portfolio-img-popup').magnificPopup({
-  type: 'image',
-  gallery: {
-    enabled: true
-  },
-});
-
 //--------------------------------Counter--------------------------------
 $(document).ready(function($) {
   $('.counter-number').counterUp({
@@ -135,7 +118,23 @@ $('.testimonial-slider-v3').slick({
   dots: false,
 });
 
-//-----------------------------------------
+//--------------------------------Portfolio--------------------------------
+$('.portfolio-menu').on('click','li',function(){
+  $(this).addClass('active').siblings().removeClass('active');
+});
+
+$('.portfolio-menu').on( 'click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  portfolio.isotope({ filter: filterValue });
+});
+
+$('.portfolio-img-popup').magnificPopup({
+  type: 'image',
+  gallery: {
+    enabled: true
+  },
+});
+
 }) (jQuery);
 
 //--------------------------------Get to top the button--------------------------------
@@ -146,11 +145,10 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-//--------------------------------Portfolio masonry grid (Isotope)--------------------------------
+//--------------------------------Portfolio Other--------------------------------
 var portfolio = $('.masonry').isotope({
   itemSelector: '.masonry-item',
-  percentPosition: true,
   masonry: {
-  columnWidth: '.masonry-item'
-}
-})
+    columWidth: '.masonry-item',
+  }
+});

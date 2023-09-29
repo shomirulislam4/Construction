@@ -1003,6 +1003,10 @@ header.header-transparent a:hover {
     transition: 0.3s;
 }
 
+.portfolio-img-popup:hover {
+    color: #333333;
+}
+
 .portfolio-content h4 {
     font-size: 18px;
     line-height: 30px;
