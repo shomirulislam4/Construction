@@ -449,7 +449,7 @@
     }
 
     .hero-content {
-        margin-top: 10px;
+        margin: 90px 0 0 10px;
     }
 
     .hero-content p {
@@ -474,6 +474,8 @@
 
     .promo {
         margin: 0 10px 90px 10px;
+        display: flex;
+        align-items: center;
     }
 
     .promo-img {
@@ -511,6 +513,11 @@
 
     .testimonial {
         margin-bottom: 100px;
+    }
+
+    .testimonial-slider-img {
+        width: 330px;
+        margin: 0 auto;
     }
 
     .cap {
