@@ -114,6 +114,16 @@ textarea:focus, input:focus, button:focus {
     outline: none;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #fbba42;
+  }
+  
+  ::selection {
+    color: #fff;
+    background: #fbba42;
+  }
+
 /*--- 2. Header --- */
 /* header top */
 .header-top {
